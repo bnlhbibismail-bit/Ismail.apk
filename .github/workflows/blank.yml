@@ -1,5 +1,9 @@
 # This is a basic workflow to help you get started with Actions
-
+- name: Upload APK
+  uses: actions/upload-artifact@v3
+  with:
+    name: my-app-apk
+    path: app/build/outputs/apk/release/app-release-unsigned.apk # (المسار قد يختلف)
 name: CI
 
 # Controls when the workflow will run
